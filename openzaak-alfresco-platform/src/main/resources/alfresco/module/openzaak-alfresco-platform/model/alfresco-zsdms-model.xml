@@ -448,6 +448,240 @@
             <overrides/>
             <mandatory-aspects/>
         </type>
+        <type name="drc:verzending">
+            <title>DRC Verzending InformatieObject</title>
+            <description>Verzending van de documenten</description>
+            <parent>cm:content</parent>
+            <properties>
+                <property name="drc:verzending__kopie_van">
+                    <title>DRC - Kopie van</title>
+                    <type>d:text</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="false">
+                        <tokenised>true</tokenised>
+                    </index>
+                </property>
+                <property name="drc:verzending__uuid">
+                    <title>DRC - Verzending - Unique Identifier</title>
+                    <type>d:text</type>
+                    <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>true</tokenised>
+                    </index>
+                </property>
+                <property name="drc:verzending__informatieobject">
+                    <title>DRC - Informatieobject</title>
+                    <type>d:text</type>
+                    <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>true</tokenised>
+                    </index>
+                </property>
+                <property name="drc:verzending__betrokkene">
+                    <title>DRC - Betrokkene</title>
+                    <type>d:text</type>
+                    <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>true</tokenised>
+                    </index>
+                </property>
+                <property name="drc:verzending__aard_relatie">
+                    <title>DRC - Aard relatie</title>
+                    <type>d:text</type>
+                    <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>true</tokenised>
+                    </index>
+                </property>
+                <property name="drc:verzending__toelichting">
+                    <title>DRC - Toelichting</title>
+                    <type>d:text</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="false">
+                        <tokenised>true</tokenised>
+                    </index>
+                </property>
+                <property name="drc:verzending__ontvangstdatum">
+                    <title>DRC - Ontvangstdatum</title>
+                    <type>d:date</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="false">
+                        <tokenised>true</tokenised>
+                    </index>
+                </property>
+                <property name="drc:verzending__verzenddatum">
+                    <title>DRC - Verzenddatum</title>
+                    <type>d:date</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="false">
+                        <tokenised>true</tokenised>
+                    </index>
+                </property>
+                <property name="drc:verzending__contact_persoon">
+                    <title>DRC - Contact persoon</title>
+                    <type>d:text</type>
+                    <mandatory>true</mandatory>
+                    <index enabled="false">
+                        <tokenised>true</tokenised>
+                    </index>
+                </property>
+                <property name="drc:verzending__contactpersoonnaam">
+                    <title>DRC - Contact persoon naam</title>
+                    <type>d:text</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="false">
+                        <tokenised>true</tokenised>
+                    </index>
+                </property>
+                <property name="drc:verzending__binnenlands_correspondentieadres_huisletter">
+                    <title>DRC - Binnenlands correspondentieadres huisletter</title>
+                    <type>d:text</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="false">
+                        <tokenised>true</tokenised>
+                    </index>
+                </property>
+                <property name="drc:verzending__binnenlands_correspondentieadres_huisnummer">
+                    <title>DRC - Binnenlands correspondentieadres huisnummer</title>
+                    <type>d:long</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="false">
+                        <tokenised>true</tokenised>
+                    </index>
+                </property>
+                <property name="drc:verzending__binnenlands_correspondentieadres_huisnummer_toevoeging">
+                    <title>DRC - Binnenlands correspondentieadres huisnummer toevoeging</title>
+                    <type>d:text</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="false">
+                        <tokenised>true</tokenised>
+                    </index>
+                </property>
+                <property name="drc:verzending__binnenlands_correspondentieadres_naam_openbare_ruimte">
+                    <title>DRC - Binnenlands correspondentieadres naam openbare ruimte</title>
+                    <type>d:text</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="false">
+                        <tokenised>true</tokenised>
+                    </index>
+                </property>
+                <property name="drc:verzending__binnenlands_correspondentieadres_postcode">
+                    <title>DRC - Binnenlands correspondentieadres postcode</title>
+                    <type>d:text</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="false">
+                        <tokenised>true</tokenised>
+                    </index>
+                </property>
+                <property name="drc:verzending__binnenlands_correspondentieadres_woonplaatsnaam">
+                    <title>DRC - Binnenlands correspondentieadres woonplaats naam</title>
+                    <type>d:text</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="false">
+                        <tokenised>true</tokenised>
+                    </index>
+                </property>
+                <property name="drc:verzending__buitenlands_correspondentieadres_adres_buitenland_1">
+                    <title>DRC - Buitenlands correspondentieadres adres buitenland 1</title>
+                    <type>d:text</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="false">
+                        <tokenised>true</tokenised>
+                    </index>
+                </property>
+                <property name="drc:verzending__buitenlands_correspondentieadres_adres_buitenland_2">
+                    <title>DRC - Buitenlands correspondentieadres adres buitenland 2</title>
+                    <type>d:text</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="false">
+                        <tokenised>true</tokenised>
+                    </index>
+                </property>
+                <property name="drc:verzending__buitenlands_correspondentieadres_adres_buitenland_3">
+                    <title>DRC - Buitenlands correspondentieadres adres buitenland 3</title>
+                    <type>d:text</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="false">
+                        <tokenised>true</tokenised>
+                    </index>
+                </property>
+                <property name="drc:verzending__buitenlands_correspondentieadres_land_postadres">
+                    <title>DRC - Buitenlands correspondentieadres land postadres</title>
+                    <type>d:text</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="false">
+                        <tokenised>true</tokenised>
+                    </index>
+                </property>
+                <property name="drc:verzending__correspondentie_postadres_postbus_of_antwoord_nummer">
+                    <title>DRC - Correspondentie postadres postbus of antwoord nummer</title>
+                    <type>d:long</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="false">
+                        <tokenised>true</tokenised>
+                    </index>
+                </property>
+                <property name="drc:verzending__correspondentie_postadres_postcode">
+                    <title>DRC - Correspondentie postadres postcode</title>
+                    <type>d:text</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="false">
+                        <tokenised>true</tokenised>
+                    </index>
+                </property>
+                <property name="drc:verzending__correspondentie_postadres_postadrestype">
+                    <title>DRC - Correspondentie postadres postadrestype</title>
+                    <type>d:text</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="false">
+                        <tokenised>true</tokenised>
+                    </index>
+                </property>
+                <property name="drc:verzending__correspondentie_postadres_woonplaatsnaam">
+                    <title>DRC - Correspondentie postadres woonplaats naam</title>
+                    <type>d:text</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="false">
+                        <tokenised>true</tokenised>
+                    </index>
+                </property>
+                <property name="drc:verzending__faxnummer">
+                    <title>DRC - Faxnummer</title>
+                    <type>d:text</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="false">
+                        <tokenised>true</tokenised>
+                    </index>
+                </property>
+                <property name="drc:verzending__emailadres">
+                    <title>DRC - Emailadres</title>
+                    <type>d:text</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="false">
+                        <tokenised>true</tokenised>
+                    </index>
+                </property>
+                <property name="drc:verzending__mijn_overheid">
+                    <title>DRC - Mijn overheid</title>
+                    <type>d:boolean</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="false">
+                        <tokenised>true</tokenised>
+                    </index>
+                </property>
+                <property name="drc:verzending__telefoonnummer">
+                    <title>DRC - Telefoonnummer</title>
+                    <type>d:text</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="false">
+                        <tokenised>true</tokenised>
+                    </index>
+                </property>
+            </properties>
+            <associations/>
+            <overrides/>
+            <mandatory-aspects/>
+        </type>
     </types>
     <aspects/>
 </model>
