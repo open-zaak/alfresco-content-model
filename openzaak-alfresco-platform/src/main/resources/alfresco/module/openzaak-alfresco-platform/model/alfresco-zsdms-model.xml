@@ -300,6 +300,14 @@
                         <tokenised>true</tokenised>
                     </index>
                 </property>
+                <property name="drc:document__verschijningsvorm">
+                    <title>DRC - Document - Verschijningsvorm</title>
+                    <type>d:text</type>
+                    <mandatory>false</mandatory>
+                    <index enabled="false">
+                        <tokenised>true</tokenised>
+                    </index>
+                </property>
             </properties>
             <associations/>
             <overrides/>
